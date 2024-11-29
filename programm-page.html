@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебная программа | Финансовая компания кредитных союзов</title>
+    <link rel="shortcut icon" href="./img/FCCSABLACKLOGO.png" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="./styles/programm-page.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./scripts/history.js" defer></script>
+</head>
+<body>
+
+    <div id="loader-wrapper">
+        <div class="wrapper">
+          <video id="loader-video" autoplay muted>
+              <source loop src="./img/loadingvideo.webm" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+          </video>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-column-elements">
+            <div class="headers-column-elements-header-row-elements">
+                <img src="./img/phoneicon.png" alt="phoneicon">
+                <a href="tel:+996 551 97-77-78">+996 551 97-77-78</a>
+            </div>
+            <div class="headers-column-elements-header-row-elements">
+                <img src="./img/phoneicon.png" alt="phoneicon">
+                <a href="tel:+996 551 97-77-78">+996 551 97-77-78</a>
+            </div>
+        </div>
+        <div class="header-right-elements">
+            <a href="#">Вакансии</a>
+            <a href="#">FAQ's</a>
+            <a href="#">Реализация прочей собственности</a>
+            <a href="#">Вход / Авторизация</a>
+            <div class="line"></div>
+            <div class="search">
+                <img src="./img/searchicon.png" alt="searchicon">
+                <a href="#">Поиск</a>
+            </div>
+            <div class="line"></div>
+            <a href="#">Русский</a>
+        </div>
+    </header>
+    
+    <div class="banner-container">
+      <div class="banner">
+          <div class="right-blue-container">
+              <a href="./index.html"><video autoplay loop muted  src="./img/LOGOVIDEO.mp4"></video></a>
+          </div>
+          <div class="dropdown-parent">
+              <nav>
+                  <ul class="dropdown" id="dropdown-menu">
+                        <li><a href="./index.html">Главная</a></li>
+                        
+                        <li class="drop"><a href="./history.html">О Компании <span class="arrow">&#9662;</span></a>
+                            <ul class="sub_menu">
+                            <li><a href="./tunduk.html">Тундук</a></li>
+                            <li><a href="./history.html">История</a></li>
+                            <li><a href="./fin-otchoty.html">Финансовые отчеты</a></li>
+                            <li><a href="./aud-otchoty.html">Аудитерские отчеты</a></li>
+                            <li><a href="./sovet-directarov.html">Руководство</a></li>
+                            <li><a href="./strukturniy-podrazdeleniye.html">Структурные подразделеия</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop"><a href="./ONAKSK.html">О НАКСК <span class="arrow">&#9662;</span></a><div class="underlines"></div>
+                            <ul class="sub_menu">
+                            <li><a href="./ONAKSK.html">История</a></li>
+                            <li><a href="./seli-zadachi.html">Цели и задачи</a></li>
+                            <li><a href="./presidium.html">Президиум</a></li>
+                            <li><a href="./programm-page.html">Учебная программа</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop"><a href="./tariff.html">Кредитование <span class="arrow">&#9662;</span></a>
+                            <ul class="sub_menu">
+                            <li><a href="./tariff.html">Кредитование КС</a></li>
+                            <li><a href="./tariff.html">Кредитование</a></li>
+                            <li><a href="#">Кредитный Калкулятор</a></li>
+                            <li><a href="./tariff.html">Тарифы И комисси ПК</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./news.html">Новости</a></li>
+                        <li><a href="./contacts.html">Контакты</a></li>
+                      </ul>
+                    </nav>
+                    <section class="blue-banner">
+                        <div class="news-container">
+                            <span class="news-icon">📢</span>
+                            <span class="news-title">Новости:</span>
+                            <span class="news-text">Акционерам ОАО "ФККС"</span>
+                            <a class="news-link" href="#">Подробнее</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="burger-menu">
+            <button class="burger-button">☰</button>
+            <div class="burger-content">
+              
+            <div class="margin-burger">
+              
+            </div>
+                <nav class="burger-dropdown">
+                    <ul class="dropdown">
+      
+                        <li><a href="./index.html">Главная</a></li>
+                          
+                          <li class="drop"><a href="./history.html">О Компании <span class="arrow">&#9662;</span></a>
+                              <ul class="sub_menu">
+                              <li><a href="./tunduk.html">Тундук</a></li>
+                              <li><a href="./history.html">История</a></li>
+                              <li><a href="./fin-otchoty.html">Финансовые отчеты</a></li>
+                              <li><a href="./sovet-directarov.html">Руководство</a></li>
+                              <li><a href="./strukturniy-podrazdeleniye.html">Структурные подразделеия</a></li>
+                              </ul>
+                          </li>
+                          <li class="drop"><a href="./ONAKSK.html">О НАКСК <span class="arrow">&#9662;</span></a><div class="underlines"></div>
+                              <ul class="sub_menu">
+                              <li><a href="./ONAKSK.html">История</a></li>
+                              <li><a href="./seli-zadachi.html">Цели и задачи</a></li>
+                              <li><a href="./presidium.html">Президиум</a></li>
+                              <li><a href="./programm-page.html">Учебная программа</a></li>
+                              </ul>
+                          </li>
+                          <li class="drop"><a href="./tariff.html">Кредитование <span class="arrow">&#9662;</span></a>
+                              <ul class="sub_menu">
+                              <li><a href="./tariff.html">Кредитование КС</a></li>
+                              <li><a href="./tariff.html">Кредитование</a></li>
+                              <li><a href="#">Кредитный Калкулятор</a></li>
+                              <li><a href="./tariff.html">Тарифы И комисси ПК</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="./news.html">Новости</a></li>
+                          <li><a href="./contacts.html">Контакты</a></li>
+                        </ul>
+                    </ul>
+                </nav>
+      
+                <div class="contact">
+                  
+                    <div class="logotipcut">
+                 <div class="right-blue-container gif">
+                <a href="#" class="burger-logo-img"><img src="./img/FCCSAWHITELOGO.png" alt="FCCSAWHITELOGO"></a>
+            </div>
+              <div class="margin-burger">
+                  <div class="titl">
+                    <h5>ФККСА</h5>
+                    <p>ОАО Финансовый кооператив кредитный союз "Араван"</p>
+                  </div>
+              </div>
+              </div>
+            
+                  <div class="contactelement">
+                    <img src="./img/mailsocialicon.png" alt="mailsocialicon">
+                    <a href="mailto:1dreammer@mail.ru">1dreammer@mail.ru</a>
+                  </div>
+                  <div class="contactelement">
+                    <img src="./img/phoneicon.png" alt="phoneicon">
+                    <a href="tel:+996 551 97-77-78">+996 551 97-77-78</a>
+                  </div>
+                </div>
+      
+            </div>
+        </div>
+
+        <div class="vkladka-parent">
+            <div class="parent-vkladish">
+                <h1>Учебная программа</h1>
+            </div>
+            <div class="put-k-vkladke">
+                <a href="./index.html">О НАКСК </a><p class="strelochka">></p><p>Президиум</p>
+            </div>
+        </div>
+
+        <div class="main">
+          <div class="main-title">
+            <h1>Программа обучения</h1>
+          </div>
+          <div class="main-title-gow">
+            <p>Тема 1. Основы осуществления деятельности кредитных союзов и их регулирование посредством нормативно-правовых актов Национального банка и законодательства Кыргызской Республики;
+
+              Под темы:
+
+Закон о кредитных союзах:
+                                     - Понятие и цели деятельности кредитного союза (далее – КС);
+
+                                     - Учредители, участники, заемщики и вкладчики КС. Процедура приема, выхода и исключения участников КС;
+
+                                     - Органы управления КС: Общее собрание участников, Наблюдательный совет КС, Правление, Кредитный комитет,
+
+                                        Ревизионная комиссия;
+
+                                     - Устав КС и другие нормативные документы, используемые в деятельности КС;
+
+                                     - Регулирование деятельности КС. Учет и отчетность, внешний аудит КС.
+
+Правила регулирования деятельности КС:
+- Общие положения. Термины и определения;
+
+- Экономические нормативы и ограничения, установленные для КС и их соблюдегние. Порядок расчета экономических нормативов;
+
+- Периодическая регулятивная отчетность КС (ПРО);
+
+- Надзор регулятора ща соблюдением КС экономических нормативов и ограничений.
+
+Положение о лицензировании кредитных союзов:
+- Общие положения;
+
+- Документы предоставляемые КС для получения лицензии;
+
+- Требование должностным лицам КС;
+
+- Порядок выдачи лицензии для начала осуществления деятельности КС;
+
+- Порядок предоставления КС дополнительной лицензии на право привлечения вкладов (депозитов) от участников КС;
+
+- Порядок предоставления КС дополнительной лицензии на право осуществления дополнительных финансовых услуг (операций);
+
+- Порядок открытия филиала КС;
+
+- Порядок внесения изменений и/или дополнений в устав КС;
+
+- Отказ КС в выдаче лицензии (дополнительный лицензии);
+
+- Реорганизация и/или ликвидация КС.
+
+                        
+
+Тема 2. О инвестиционной, депозитной, дивидендной, кредитной и кадровой политиках кредитных союзах;
+
+Дивидендная и инвестиционная политики КС;
+Депозитная и кадровая политики КС;
+Кредитная политика КС;
+
+
+  Тема 3. Понятие и виды банковских рисков. Управление рисками в кредитных союзах;
+
+Банковские риски и их виды: основные и прочие:
+- Кредитный риск. Этапы кредитного процесса. Методы определения кредитного риска на микроуровне;
+
+- Операционный риск и его виды;
+
+- Рыночный риск и его виды.
+
+Основные риски в деятельности КС и способы управления ими:
+- Рисковые активы КС;
+
+  Тема 4. Корпоративное управление и др.
+
+- Корпоративное управление в КС: Общее собрание участников, Наблюдательный совет, Правление, Кредитный комитет, Ревизионная комиссия;
+
+- Главные заинтересованные стороны и их роли в корпоративном управлении в КС;
+
+- Правильное корпоративное управление в КС;
+
+- Корпоративная стратегия и аппетит к риску в КС.</p>
+          </div>
+        </div>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="row-logo-title">
+                <a href="#"><img src="./img/FCCSAWHITELOGO.png" alt=""></a>
+                <a href="#"><h6>FCCU</h6></a>
+              </div>
+              <p class="text-justify">Финансовая компания кредитных союзов</p>
+              <h5 class="years">1997 - 2024</h5>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <h6>Важные ссылки</h6>
+                <ul class="footer-links">
+                  <li><a href="#">Вакансии</a></li>
+                  <li><a href="#">Финансовые отчеты</a></li>
+                  <li><a href="#">Аудиторские отчеты</a></li>
+                  <li><a href="#">Наши контакты</a></li>
+                  <li><a href="#">Релизация прочей собственности</a></li> 
+                </ul>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <h6>Кредитование</h6>
+                <ul class="footer-links">
+                  <li><a href="./tariff.html">Кредитование</a></li>
+                  <li><a href="">Кредитный калькулятор</a></li>
+                  <li><a href="./tariff.html">Тарифы и комиссии по кредитам</a></li>
+                  <li><a href="./tariff.html">Кредитная линия</a></li>
+                </ul>
+              </div>
+              <div class="wight-line"></div>
+            <div class="contacts-footer col-sm-12 col-md-6">
+              <div class="contacts-footer-top">
+                <span>Наши контакты</span>
+                <a href="tel:+996 551 97-77-78">+996 551 97-77-78</a>
+                <a href="tel:+996 551 97-77-78">+996 551 97-77-78</a>
+              </div>
+              <div class="contacts-footer-bottom">
+                <span>График работы</span>
+                <h2 class="grafik-roboty">ПН - ПТ: 8:30 - 17:30</h2>
+              </div>
+            </div>
+            
+          </div>
+          <hr>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
